@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_52d883f4b4286c57f28bc9fdfc08ee9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_52d883f4b4286c57f28bc9fdfc08ee9c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_52d883f4b4286c57f28bc9fdfc08ee9c = L.map(
+                "map_52d883f4b4286c57f28bc9fdfc08ee9c",
+                {
+                    center: [12.8797, 121.774],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f9d13a7765d27e516dba49a595d3d8e6 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f9d13a7765d27e516dba49a595d3d8e6.addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            var circle_marker_867862e3c0d22cc6b5c401ea4d3709fc = L.circleMarker(
+                [14.5904492, 120.9803621],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_867862e3c0d22cc6b5c401ea4d3709fc.bindTooltip(
+                `<div>
+                     <b>Manila</b><br>Population 3.728060812921173
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6cb10c936e1d388a6a38b6f81a6304f2 = L.circleMarker(
+                [14.5774392, 121.0338973],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_6cb10c936e1d388a6a38b6f81a6304f2.bindTooltip(
+                `<div>
+                     <b>Mandaluyong</b><br>Population 10.221188994397789
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27b23e784dbe8a72c9c0d10afdb0d6ad = L.circleMarker(
+                [14.6331084, 121.0993541],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_27b23e784dbe8a72c9c0d10afdb0d6ad.bindTooltip(
+                `<div>
+                     <b>Marikina</b><br>Population 1.179834982839369
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf36d614c4bc21338d75acbe16977457 = L.circleMarker(
+                [14.5605166, 121.0764343],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_bf36d614c4bc21338d75acbe16977457.bindTooltip(
+                `<div>
+                     <b>Pasig</b><br>Population 6.336422613531047
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f41916b4fd5f30f476ce590c84ca78ca = L.circleMarker(
+                [14.6510546, 121.0486254],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_f41916b4fd5f30f476ce590c84ca78ca.bindTooltip(
+                `<div>
+                     <b>Quezon</b><br>Population 0.8150904119592005
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fbeb39029ff4a6404d385a10d677a737 = L.circleMarker(
+                [14.6044363, 121.0299469],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_fbeb39029ff4a6404d385a10d677a737.bindTooltip(
+                `<div>
+                     <b>San Juan</b><br>Population 3.410541823539041
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea660b5f003a39d7b1fabd562bac1ca5 = L.circleMarker(
+                [14.651348, 120.9724002],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_ea660b5f003a39d7b1fabd562bac1ca5.bindTooltip(
+                `<div>
+                     <b>Caloocan</b><br>Population 4.899436734601112
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd373dbaa61e584f28e43cdbb3fbd787 = L.circleMarker(
+                [14.6578504, 120.9511261],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_bd373dbaa61e584f28e43cdbb3fbd787.bindTooltip(
+                `<div>
+                     <b>Malabon</b><br>Population 4.102865741057384
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca68cad12125095219e74a600e6cf063 = L.circleMarker(
+                [14.6571862, 120.9479692],
+                {"bubblingMouseEvents": true, "color": "#ccece6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ccece6ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_ca68cad12125095219e74a600e6cf063.bindTooltip(
+                `<div>
+                     <b>Navotas</b><br>Population -0.7696532151060478
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fcb965e96f57107a97c5bf5c5e5c8f0c = L.circleMarker(
+                [14.6916903, 120.9694534],
+                {"bubblingMouseEvents": true, "color": "#41b6c4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41b6c4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_fcb965e96f57107a97c5bf5c5e5c8f0c.bindTooltip(
+                `<div>
+                     <b>Valenzuela</b><br>Population 15.240594305166482
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67c10281184b19f03c29e194f79cec87 = L.circleMarker(
+                [14.4809012, 120.9817861],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_67c10281184b19f03c29e194f79cec87.bindTooltip(
+                `<div>
+                     <b>Las Piñas</b><br>Population 2.954521526794296
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a92b42ac9780a66c02f4f7ab2521fbb5 = L.circleMarker(
+                [14.5567949, 121.0211226],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_a92b42ac9780a66c02f4f7ab2521fbb5.bindTooltip(
+                `<div>
+                     <b>Makati</b><br>Population 8.06965990504667
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e64ab88566e419eaeaaacaff412dc20a = L.circleMarker(
+                [14.3892634, 121.0449101],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_e64ab88566e419eaeaaacaff412dc20a.bindTooltip(
+                `<div>
+                     <b>Muntinlupa</b><br>Population 7.717602659219161
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_086a1675bdf50a520e2a24eeb4ccc62f = L.circleMarker(
+                [14.5008116, 120.9915327],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_086a1675bdf50a520e2a24eeb4ccc62f.bindTooltip(
+                `<div>
+                     <b>Parañaque</b><br>Population 3.6300993358585325
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7efe10e18dc474e80bcba662be53c32 = L.circleMarker(
+                [14.5538309, 120.9935485],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_c7efe10e18dc474e80bcba662be53c32.bindTooltip(
+                `<div>
+                     <b>Pasay</b><br>Population 5.794171736426888
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_30c7fbe1a8550fc14a09a15317e5a7f5 = L.circleMarker(
+                [14.5270538, 121.0744942],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_30c7fbe1a8550fc14a09a15317e5a7f5.bindTooltip(
+                `<div>
+                     <b>Taguig</b><br>Population 10.163433406011816
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d88add759dbb79cb08ce7ecbd628dde3 = L.circleMarker(
+                [14.5447555, 121.067134],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_d88add759dbb79cb08ce7ecbd628dde3.bindTooltip(
+                `<div>
+                     <b>Pateros</b><br>Population 2.1726190476190474
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e8145b77bb5ed65539cd1184bf6377e = L.circleMarker(
+                [17.58, 120.8],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_8e8145b77bb5ed65539cd1184bf6377e.bindTooltip(
+                `<div>
+                     <b>Abra</b><br>Population 4.074058716205009
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_12f956ff93b6f88b0e90bfe173a78591 = L.circleMarker(
+                [18.12, 121.19],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_12f956ff93b6f88b0e90bfe173a78591.bindTooltip(
+                `<div>
+                     <b>Apayao</b><br>Population 4.347899046851927
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_901390660e074875c079707254c62205 = L.circleMarker(
+                [16.52, 120.69],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_901390660e074875c079707254c62205.bindTooltip(
+                `<div>
+                     <b>Benguet</b><br>Population 3.2403008354548386
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8524e1da5249a686f19562201ff43653 = L.circleMarker(
+                [16.87, 121.22],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_8524e1da5249a686f19562201ff43653.bindTooltip(
+                `<div>
+                     <b>Ifugao</b><br>Population 2.3155590181556396
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a85517d1c46f813212c123e4fa7e07ff = L.circleMarker(
+                [17.46, 121.31],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_a85517d1c46f813212c123e4fa7e07ff.bindTooltip(
+                `<div>
+                     <b>Kalinga</b><br>Population 7.941508369381229
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83b0dd5cc3d3839da852cdb8c409915a = L.circleMarker(
+                [17.11, 121.16],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_83b0dd5cc3d3839da852cdb8c409915a.bindTooltip(
+                `<div>
+                     <b>Mountain Province</b><br>Population 2.335209263212368
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_260dda15e16b7b2db0c49604e78e546e = L.circleMarker(
+                [16.4119905, 120.5933719],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_260dda15e16b7b2db0c49604e78e546e.bindTooltip(
+                `<div>
+                     <b>Baguio</b><br>Population 6.078189514891449
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d9373b50407d1cc237d67e61d37759f = L.circleMarker(
+                [18.166667, 120.75],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_5d9373b50407d1cc237d67e61d37759f.bindTooltip(
+                `<div>
+                     <b>Ilocos Norte</b><br>Population 2.783262319986646
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c49315fd8767f3ad111d3a682a230af4 = L.circleMarker(
+                [17.2, 120.5],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_c49315fd8767f3ad111d3a682a230af4.bindTooltip(
+                `<div>
+                     <b>Ilocos Sur</b><br>Population 2.369400929142718
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15fa3513197df3e56c55326b5aa95af3 = L.circleMarker(
+                [16.5735957, 120.4089899],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_15fa3513197df3e56c55326b5aa95af3.bindTooltip(
+                `<div>
+                     <b>La Union</b><br>Population 4.538087314228764
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_08228ac5b3691fd9b400762e578972f6 = L.circleMarker(
+                [15.916667, 120.333333],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_08228ac5b3691fd9b400762e578972f6.bindTooltip(
+                `<div>
+                     <b>Pangasinan</b><br>Population 6.982858743082721
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_319b367632484f4d0975d77dcd22f95a = L.circleMarker(
+                [20.6442465, 121.8939456],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_319b367632484f4d0975d77dcd22f95a.bindTooltip(
+                `<div>
+                     <b>Batanes</b><br>Population 9.190536936101125
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_026e0aba954deb057f038aa126c95305 = L.circleMarker(
+                [18.0, 121.833333],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_026e0aba954deb057f038aa126c95305.bindTooltip(
+                `<div>
+                     <b>Cagayan</b><br>Population 5.776856885568489
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d52abfbd98b8c80a11d9d58218682ca1 = L.circleMarker(
+                [17.0, 122.0],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_d52abfbd98b8c80a11d9d58218682ca1.bindTooltip(
+                `<div>
+                     <b>Isabela</b><br>Population 6.493863448391846
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3aec3faf0b099fcc96f39c84ee98dd28 = L.circleMarker(
+                [16.35, 121.13],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_3aec3faf0b099fcc96f39c84ee98dd28.bindTooltip(
+                `<div>
+                     <b>Nueva Vizcaya</b><br>Population 9.981494051343505
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_969517112d9873247b55493de101c7bb = L.circleMarker(
+                [16.283333, 121.583333],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_969517112d9873247b55493de101c7bb.bindTooltip(
+                `<div>
+                     <b>Quirino</b><br>Population 7.850638390187894
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0056212dee334d2fae7505b615fe6615 = L.circleMarker(
+                [16.0474764, 121.6700916],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_0056212dee334d2fae7505b615fe6615.bindTooltip(
+                `<div>
+                     <b>Aurora</b><br>Population 9.990855479247536
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3a2b2a5bf8cf4ed38c8e7b6388b780e = L.circleMarker(
+                [14.6436031, 120.4657622],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_f3a2b2a5bf8cf4ed38c8e7b6388b780e.bindTooltip(
+                `<div>
+                     <b>Bataan</b><br>Population 12.189969105370407
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e8b0999216a943aaa1c9c38be454e8c = L.circleMarker(
+                [15.0, 121.083333],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_9e8b0999216a943aaa1c9c38be454e8c.bindTooltip(
+                `<div>
+                     <b>Bulacan</b><br>Population 12.661300439753578
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0943d63c128e86d1ffc7fdcd72a22559 = L.circleMarker(
+                [15.583333, 121.0],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_0943d63c128e86d1ffc7fdcd72a22559.bindTooltip(
+                `<div>
+                     <b>Nueva Ecija</b><br>Population 7.375127878218568
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d46be81b9ffcbc5c3e362284ee43a4c4 = L.circleMarker(
+                [15.0519635, 120.6445398],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_d46be81b9ffcbc5c3e362284ee43a4c4.bindTooltip(
+                `<div>
+                     <b>Pampanga</b><br>Population 10.900227923079372
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c837d0c4ab6947068888f6a6916cf97 = L.circleMarker(
+                [15.4937252, 120.4964091],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_3c837d0c4ab6947068888f6a6916cf97.bindTooltip(
+                `<div>
+                     <b>Tarlac</b><br>Population 10.060489287547025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_404cf0ce5ec7cc982c5f6373e90d4b51 = L.circleMarker(
+                [15.23, 120.12],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_404cf0ce5ec7cc982c5f6373e90d4b51.bindTooltip(
+                `<div>
+                     <b>Zambales</b><br>Population 9.946212900779896
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5331e953b51cefe794e58c25f462de31 = L.circleMarker(
+                [15.1389351, 120.5875321],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_5331e953b51cefe794e58c25f462de31.bindTooltip(
+                `<div>
+                     <b>Angeles</b><br>Population 12.461069785294704
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5337ca641af2b4ea4c43358d14d19dcb = L.circleMarker(
+                [14.8314675, 120.2835205],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_5337ca641af2b4ea4c43358d14d19dcb.bindTooltip(
+                `<div>
+                     <b>Olongapo</b><br>Population 11.704857535187092
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_949634616c72f3c88f6fd1c7a25dbeee = L.circleMarker(
+                [13.9146826, 121.0867566],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_949634616c72f3c88f6fd1c7a25dbeee.bindTooltip(
+                `<div>
+                     <b>Batangas</b><br>Population 7.948491928435031
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9925ab34678f180c938118bc127b3dc = L.circleMarker(
+                [14.2554073, 120.8671503],
+                {"bubblingMouseEvents": true, "color": "#41b6c4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41b6c4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_c9925ab34678f180c938118bc127b3dc.bindTooltip(
+                `<div>
+                     <b>Cavite</b><br>Population 18.120539890563606
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_deeca64c4bee4db47687b1cd41c10248 = L.circleMarker(
+                [14.1696476, 121.3336526],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_deeca64c4bee4db47687b1cd41c10248.bindTooltip(
+                `<div>
+                     <b>Laguna</b><br>Population 11.436663469607565
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_200d6934a7ede239c0c59ceee55bf775 = L.circleMarker(
+                [14.6510546, 121.0486254],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_200d6934a7ede239c0c59ceee55bf775.bindTooltip(
+                `<div>
+                     <b>Quezon</b><br>Population 5.056442430229314
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a85e80a4f617864c3b0bfe6b94d4f0c = L.circleMarker(
+                [14.65, 121.25],
+                {"bubblingMouseEvents": true, "color": "#41b6c4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41b6c4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_0a85e80a4f617864c3b0bfe6b94d4f0c.bindTooltip(
+                `<div>
+                     <b>Rizal</b><br>Population 15.460502935448561
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3da569bb4b6dbafafed3ced356cef7b7 = L.circleMarker(
+                [13.9357696, 121.6128612],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_3da569bb4b6dbafafed3ced356cef7b7.bindTooltip(
+                `<div>
+                     <b>Lucena</b><br>Population 4.760974730326613
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd9555f14a5fe0da7912a9103ce595a7 = L.circleMarker(
+                [13.416667, 121.95],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_fd9555f14a5fe0da7912a9103ce595a7.bindTooltip(
+                `<div>
+                     <b>Marinduque</b><br>Population 1.9981153073711948
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c45cd6763dc6f904b469dfa07f60a6a1 = L.circleMarker(
+                [13.0000021, 120.9166666],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_c45cd6763dc6f904b469dfa07f60a6a1.bindTooltip(
+                `<div>
+                     <b>Occidental Mindoro</b><br>Population 7.783937268933597
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2f01ccf1920c79935126ac61aec87d6 = L.circleMarker(
+                [13.2, 121.2],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_e2f01ccf1920c79935126ac61aec87d6.bindTooltip(
+                `<div>
+                     <b>Oriental Mindoro</b><br>Population 7.615581375235618
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_921722feb2ff173e8a984c37886ba78e = L.circleMarker(
+                [11.0798978, 120.9373422],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_921722feb2ff173e8a984c37886ba78e.bindTooltip(
+                `<div>
+                     <b>Palawan</b><br>Population 10.609569036657017
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44e8f5e79951266e1e35b7db70c0408a = L.circleMarker(
+                [12.5, 122.2],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_44e8f5e79951266e1e35b7db70c0408a.bindTooltip(
+                `<div>
+                     <b>Romblon</b><br>Population 5.534512143889119
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b5eb78ed9b0407f2ec83348f97cae2b6 = L.circleMarker(
+                [9.7398561, 118.7438187],
+                {"bubblingMouseEvents": true, "color": "#41b6c4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41b6c4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_b5eb78ed9b0407f2ec83348f97cae2b6.bindTooltip(
+                `<div>
+                     <b>Puerto Princesa</b><br>Population 20.368381442167486
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29f0957a12d0c8df93d7cb941b78d906 = L.circleMarker(
+                [13.216667, 123.55],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_29f0957a12d0c8df93d7cb941b78d906.bindTooltip(
+                `<div>
+                     <b>Albay</b><br>Population 4.5589302310724005
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4cd3dddc5e42ea13c8f324d1b4fc880 = L.circleMarker(
+                [14.166667, 122.75],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_b4cd3dddc5e42ea13c8f324d1b4fc880.bindTooltip(
+                `<div>
+                     <b>Camarines Norte</b><br>Population 7.952162903964082
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e449afe9b7e0efd5e5ca253a00e6765e = L.circleMarker(
+                [13.6428216, 123.3282338],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_e449afe9b7e0efd5e5ca253a00e6765e.bindTooltip(
+                `<div>
+                     <b>Camarines Sur</b><br>Population 5.925602700886638
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e8dc3f622b98aa579d3f1662086d5b7 = L.circleMarker(
+                [13.833333, 124.25],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_3e8dc3f622b98aa579d3f1662086d5b7.bindTooltip(
+                `<div>
+                     <b>Catanduanes</b><br>Population 4.182569243267271
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4d16f0a71c6dae4789781d4e5c9ba66 = L.circleMarker(
+                [12.166667, 123.583333],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_a4d16f0a71c6dae4789781d4e5c9ba66.bindTooltip(
+                `<div>
+                     <b>Masbate</b><br>Population 1.8519867367852505
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b5900f3897cd0c9b8084ad1dd40e4be = L.circleMarker(
+                [12.833333, 123.916667],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_7b5900f3897cd0c9b8084ad1dd40e4be.bindTooltip(
+                `<div>
+                     <b>Sorsogon</b><br>Population 4.502937767750511
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b28fafc0681d49a83931227c9d5d8e4d = L.circleMarker(
+                [11.6297894, 122.2481177],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_b28fafc0681d49a83931227c9d5d8e4d.bindTooltip(
+                `<div>
+                     <b>Aklan</b><br>Population 7.072090017274883
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa0a3c75dd1d77e16fdd2c632260eff8 = L.circleMarker(
+                [11.1705066, 122.083333],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_fa0a3c75dd1d77e16fdd2c632260eff8.bindTooltip(
+                `<div>
+                     <b>Antique</b><br>Population 5.319821584434685
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_64f83e45ecad7d46e89c2ed71589eedf = L.circleMarker(
+                [11.3852987, 122.6377315],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_64f83e45ecad7d46e89c2ed71589eedf.bindTooltip(
+                `<div>
+                     <b>Capiz</b><br>Population 5.722211131308249
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_161a18d39e89d39f4f6a8a449aac613d = L.circleMarker(
+                [10.5730629, 122.6238907],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_161a18d39e89d39f4f6a8a449aac613d.bindTooltip(
+                `<div>
+                     <b>Guimaras</b><br>Population 7.576182758442957
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac981a473f47531ddaf4032d0ee236d4 = L.circleMarker(
+                [10.9522168, 122.5799456],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_ac981a473f47531ddaf4032d0ee236d4.bindTooltip(
+                `<div>
+                     <b>Iloilo</b><br>Population 5.963366475196794
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c48a0040064bb081c75476ba384a8eb3 = L.circleMarker(
+                [10.416667, 123.0],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_c48a0040064bb081c75476ba384a8eb3.bindTooltip(
+                `<div>
+                     <b>Negros Occidental</b><br>Population 5.041963975731812
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90a4cdce2f7b518cd068f7f212d1cf58 = L.circleMarker(
+                [10.6762836, 122.9513786],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_90a4cdce2f7b518cd068f7f212d1cf58.bindTooltip(
+                `<div>
+                     <b>Bacolod</b><br>Population 6.924671857619577
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b580069e0c83b630c872b16d838ac62 = L.circleMarker(
+                [10.9522168, 122.5799456],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_3b580069e0c83b630c872b16d838ac62.bindTooltip(
+                `<div>
+                     <b>Iloilo City</b><br>Population 2.1504848300862514
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc3cecdcfc001d49c9337e6bec17f283 = L.circleMarker(
+                [9.833333, 124.1615579],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_bc3cecdcfc001d49c9337e6bec17f283.bindTooltip(
+                `<div>
+                     <b>Bohol</b><br>Population 6.148862632845092
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e03cb64110662a8d7272f6c2f65283c9 = L.circleMarker(
+                [10.47, 123.83],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_e03cb64110662a8d7272f6c2f65283c9.bindTooltip(
+                `<div>
+                     <b>Cebu</b><br>Population 13.147511621370938
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ddc58d69da9e6b1b4bb9f00f8b27a8b8 = L.circleMarker(
+                [9.75, 123.0],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_ddc58d69da9e6b1b4bb9f00f8b27a8b8.bindTooltip(
+                `<div>
+                     <b>Negros Oriental</b><br>Population 5.756109801143178
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_80adb7c6c4533bcdf96d6fa5d6992a15 = L.circleMarker(
+                [9.18, 123.58],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_80adb7c6c4533bcdf96d6fa5d6992a15.bindTooltip(
+                `<div>
+                     <b>Siquijor</b><br>Population 7.721078513085514
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f20852bbcb5ae286d617adae21ba09c = L.circleMarker(
+                [10.47, 123.83],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_9f20852bbcb5ae286d617adae21ba09c.bindTooltip(
+                `<div>
+                     <b>Cebu City</b><br>Population 4.504390257649215
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71da31f8cfb52b6ade8a214fcee89ec2 = L.circleMarker(
+                [10.3126722, 123.9488177],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_71da31f8cfb52b6ade8a214fcee89ec2.bindTooltip(
+                `<div>
+                     <b>Lapu-Lapu</b><br>Population 21.928294193750737
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_614a115b1a335becf1e304df64a8aa89 = L.circleMarker(
+                [10.3269049, 123.9427295],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_614a115b1a335becf1e304df64a8aa89.bindTooltip(
+                `<div>
+                     <b>Mandaue</b><br>Population 0.4031390802252285
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1852761639873dfbae6823afdf0c1d34 = L.circleMarker(
+                [11.6, 124.49],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_1852761639873dfbae6823afdf0c1d34.bindTooltip(
+                `<div>
+                     <b>Biliran</b><br>Population 4.486865720345897
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1dd1c45f08571053722db883ef2d9afd = L.circleMarker(
+                [11.73, 125.37],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_1dd1c45f08571053722db883ef2d9afd.bindTooltip(
+                `<div>
+                     <b>Eastern Samar</b><br>Population 2.142306704341125
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5280626146fb249b0fff45f225924114 = L.circleMarker(
+                [10.7841157, 124.892321],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_5280626146fb249b0fff45f225924114.bindTooltip(
+                `<div>
+                     <b>Leyte</b><br>Population 3.0247947589087594
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d285f6bca8b7c921a286149774c1162 = L.circleMarker(
+                [12.42, 124.81],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_8d285f6bca8b7c921a286149774c1162.bindTooltip(
+                `<div>
+                     <b>Northern Samar</b><br>Population 1.07641145578838
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a1c2d0ac5779f025855d82f51360868 = L.circleMarker(
+                [11.7982219, 125.1690418],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_7a1c2d0ac5779f025855d82f51360868.bindTooltip(
+                `<div>
+                     <b>Samar</b><br>Population 1.6274579393989093
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa939180c836d44f36697b8f16384e66 = L.circleMarker(
+                [10.3475099, 125.1250896],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_aa939180c836d44f36697b8f16384e66.bindTooltip(
+                `<div>
+                     <b>Southern Leyte</b><br>Population 1.8548903378778898
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10666d134e13d96624d28f322409aa7b = L.circleMarker(
+                [11.2436208, 125.0079543],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_10666d134e13d96624d28f322409aa7b.bindTooltip(
+                `<div>
+                     <b>Tacloban</b><br>Population 4.044793443733503
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72705d85a088cf1176eea52cb507da30 = L.circleMarker(
+                [8.0, 122.666667],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_72705d85a088cf1176eea52cb507da30.bindTooltip(
+                `<div>
+                     <b>Zamboanga del Norte</b><br>Population 3.565577376944472
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_859e39d923bcd71a1ccadaecc2b4475e = L.circleMarker(
+                [7.9043, 123.3194],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_859e39d923bcd71a1ccadaecc2b4475e.bindTooltip(
+                `<div>
+                     <b>Zamboanga del Sur</b><br>Population 3.9571612607032534
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_963ca2e8aa7b39728118a7c1bc24d5c8 = L.circleMarker(
+                [7.7877097, 122.5744217],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_963ca2e8aa7b39728118a7c1bc24d5c8.bindTooltip(
+                `<div>
+                     <b>Zamboanga Sibugay</b><br>Population 5.7983444132238455
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b63d45bf036b96e3aa3eb0960f282765 = L.circleMarker(
+                [17.0, 122.0],
+                {"bubblingMouseEvents": true, "color": "#41b6c4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41b6c4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_b63d45bf036b96e3aa3eb0960f282765.bindTooltip(
+                `<div>
+                     <b>Isabela</b><br>Population 15.596517360002837
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f66f2b44bd6bc69731eb07352c211c4 = L.circleMarker(
+                [18.1888705, 120.547657],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_4f66f2b44bd6bc69731eb07352c211c4.bindTooltip(
+                `<div>
+                     <b>Zamboanga</b><br>Population 13.394654670056475
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_89c0743b97f117e080e4178619818e03 = L.circleMarker(
+                [8.022778, 124.998611],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_89c0743b97f117e080e4178619818e03.bindTooltip(
+                `<div>
+                     <b>Bukidnon</b><br>Population 8.908965776490822
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85374143cd41fb74a0227544b0982269 = L.circleMarker(
+                [9.1739753, 124.7256992],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_85374143cd41fb74a0227544b0982269.bindTooltip(
+                `<div>
+                     <b>Camiguin</b><br>Population 4.893871922963901
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dca3bba2f9cd543ba3d0747b1d11b7fb = L.circleMarker(
+                [7.9579723, 123.9021124],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_dca3bba2f9cd543ba3d0747b1d11b7fb.bindTooltip(
+                `<div>
+                     <b>Lanao del Norte</b><br>Population 6.875716112626498
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5346c926158af67267582a51e10de474 = L.circleMarker(
+                [8.333333, 123.7],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_5346c926158af67267582a51e10de474.bindTooltip(
+                `<div>
+                     <b>Misamis Occidental</b><br>Population 2.5255511304942817
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c0cab29382e1d6b89ddb964fefef949 = L.circleMarker(
+                [8.6534807, 124.8235205],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_7c0cab29382e1d6b89ddb964fefef949.bindTooltip(
+                `<div>
+                     <b>Misamis Oriental</b><br>Population 7.697277123810789
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6ab23f444f0d653b7ffe03fada97328 = L.circleMarker(
+                [8.4756417, 124.6421532],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_d6ab23f444f0d653b7ffe03fada97328.bindTooltip(
+                `<div>
+                     <b>Cagayan de Oro</b><br>Population 7.759745543309417
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b002fa3c5b8281bae98e7f9c191f4bf = L.circleMarker(
+                [8.2281556, 124.2411508],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_5b002fa3c5b8281bae98e7f9c191f4bf.bindTooltip(
+                `<div>
+                     <b>Iligan</b><br>Population 5.982464435610505
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a37d7b34ce792fdc851741a6dcaed616 = L.circleMarker(
+                [7.6179228, 125.6832687],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_a37d7b34ce792fdc851741a6dcaed616.bindTooltip(
+                `<div>
+                     <b>Davao del Norte</b><br>Population 10.697783795059095
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_211d41c64d4bab1008c09e02f7000a46 = L.circleMarker(
+                [6.6983658, 125.3612135],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_211d41c64d4bab1008c09e02f7000a46.bindTooltip(
+                `<div>
+                     <b>Davao del Sur</b><br>Population 7.570962458978039
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a5b029ab1eac275fa87dd66bc1105d2 = L.circleMarker(
+                [6.27, 125.6],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_2a5b029ab1eac275fa87dd66bc1105d2.bindTooltip(
+                `<div>
+                     <b>Davao Occidental</b><br>Population 0.2582647893735261
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4730cc1acc12f67e9ae594b91c5dd76 = L.circleMarker(
+                [7.166667, 126.333333],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_a4730cc1acc12f67e9ae594b91c5dd76.bindTooltip(
+                `<div>
+                     <b>Davao Oriental</b><br>Population 3.1102515752525233
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_958191366fe17f4accf3d56a0ce2820f = L.circleMarker(
+                [7.0648306, 125.6080623],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_958191366fe17f4accf3d56a0ce2820f.bindTooltip(
+                `<div>
+                     <b>Davao City</b><br>Population 8.815602780419487
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c68545b94fe0c5718480c9d63aa8b87 = L.circleMarker(
+                [7.27, 124.86],
+                {"bubblingMouseEvents": true, "color": "#ccece6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ccece6ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_6c68545b94fe0c5718480c9d63aa8b87.bindTooltip(
+                `<div>
+                     <b>Cotabato</b><br>Population -7.578345885151408
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_867166d24f96425863131ca11c30aa4a = L.circleMarker(
+                [5.874722, 125.275278],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_867166d24f96425863131ca11c30aa4a.bindTooltip(
+                `<div>
+                     <b>Sarangani</b><br>Population 2.698154010667676
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47c638ef41a2d895f655988563e35b66 = L.circleMarker(
+                [6.2855239, 124.9333096],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_47c638ef41a2d895f655988563e35b66.bindTooltip(
+                `<div>
+                     <b>South Cotabato</b><br>Population 6.5757372807932795
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52f9854300e1b9ff773cce7e76299db5 = L.circleMarker(
+                [6.5556705, 124.3271496],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_52f9854300e1b9ff773cce7e76299db5.bindTooltip(
+                `<div>
+                     <b>Sultan Kudarat</b><br>Population 5.166513769940709
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0e1faf242547b6a265e00c0d8db8079 = L.circleMarker(
+                [6.1122217, 125.1721893],
+                {"bubblingMouseEvents": true, "color": "#41b6c4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41b6c4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_e0e1faf242547b6a265e00c0d8db8079.bindTooltip(
+                `<div>
+                     <b>General Santos</b><br>Population 17.305020136395903
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fef4995484b4642c7ce1925b197284fb = L.circleMarker(
+                [8.92, 125.46],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_fef4995484b4642c7ce1925b197284fb.bindTooltip(
+                `<div>
+                     <b>Agusan del Norte</b><br>Population 9.308806977656042
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03c5c76977ffec6b754d998f28cf8311 = L.circleMarker(
+                [8.36, 125.71],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_03c5c76977ffec6b754d998f28cf8311.bindTooltip(
+                `<div>
+                     <b>Agusan del Sur</b><br>Population 5.52541700385212
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5e2feb32b42d609b912c3a237021bd2 = L.circleMarker(
+                [10.1577932, 125.5851827],
+                {"bubblingMouseEvents": true, "color": "#99d8c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99d8c9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_c5e2feb32b42d609b912c3a237021bd2.bindTooltip(
+                `<div>
+                     <b>Dinagat Islands</b><br>Population 0.7589341890021392
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7acf3772c7bfbcea3dfbd2dac34c15bb = L.circleMarker(
+                [9.7022868, 125.5464831],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_7acf3772c7bfbcea3dfbd2dac34c15bb.bindTooltip(
+                `<div>
+                     <b>Surigao del Norte</b><br>Population 10.214229170789629
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_daeff804e7dd0e857db71f5fe3036e23 = L.circleMarker(
+                [8.84, 126.15],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_daeff804e7dd0e857db71f5fe3036e23.bindTooltip(
+                `<div>
+                     <b>Surigao del Sur</b><br>Population 8.443224989447023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3199c9fd848599a4f2aa5c86e20b462b = L.circleMarker(
+                [8.9483324, 125.5369442],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_3199c9fd848599a4f2aa5c86e20b462b.bindTooltip(
+                `<div>
+                     <b>Butuan City</b><br>Population 10.635103823320863
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bafc5f943d51e198e951e69e79d9dbd = L.circleMarker(
+                [6.5649821, 122.0649183],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_5bafc5f943d51e198e951e69e79d9dbd.bindTooltip(
+                `<div>
+                     <b>Basilan</b><br>Population 22.975425516260362
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27197fad2b88acd7ce19bda017d036da = L.circleMarker(
+                [7.8776443, 124.3754759],
+                {"bubblingMouseEvents": true, "color": "#41b6c4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41b6c4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_27197fad2b88acd7ce19bda017d036da.bindTooltip(
+                `<div>
+                     <b>Lanao del Sur</b><br>Population 14.356689933032277
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a68affe23d73af2381318496d63c2ca4 = L.circleMarker(
+                [6.1014858, 125.1597744],
+                {"bubblingMouseEvents": true, "color": "#0b1a39ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b1a39ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_a68affe23d73af2381318496d63c2ca4.bindTooltip(
+                `<div>
+                     <b>Maguindanao</b><br>Population 42.023267085941015
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_149f94b288d209b11b67aafa64d1349f = L.circleMarker(
+                [5.9942808, 121.0787926],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_149f94b288d209b11b67aafa64d1349f.bindTooltip(
+                `<div>
+                     <b>Sulu</b><br>Population 21.26475177967119
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a1cd3a1efd8615522e59286d22b8a6c = L.circleMarker(
+                [5.2057, 120.0265],
+                {"bubblingMouseEvents": true, "color": "#66c2a4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#66c2a4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+        
+    
+            circle_marker_9a1cd3a1efd8615522e59286d22b8a6c.bindTooltip(
+                `<div>
+                     <b>Tawi-Tawi</b><br>Population 12.684693446629897
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+    var color_map_f138d49a63914b9584e93779a17a141a = {};
+
+    
+    color_map_f138d49a63914b9584e93779a17a141a.color = d3.scale.threshold()
+              .domain([-7.578345885151408, -7.478943855149218, -7.3795418251470295, -7.28013979514484, -7.180737765142651, -7.0813357351404616, -6.981933705138273, -6.882531675136083, -6.783129645133894, -6.683727615131705, -6.584325585129515, -6.4849235551273265, -6.385521525125137, -6.286119495122948, -6.186717465120759, -6.087315435118569, -5.98791340511638, -5.8885113751141915, -5.789109345112002, -5.689707315109812, -5.590305285107624, -5.490903255105434, -5.391501225103244, -5.292099195101056, -5.192697165098867, -5.093295135096677, -4.993893105094488, -4.894491075092299, -4.79508904509011, -4.695687015087921, -4.596284985085731, -4.496882955083542, -4.397480925081353, -4.298078895079163, -4.198676865076974, -4.099274835074786, -3.9998728050725956, -3.9004707750704064, -3.8010687450682172, -3.701666715066028, -3.602264685063839, -3.5028626550616497, -3.40346062505946, -3.3040585950572714, -3.204656565055082, -3.105254535052892, -3.0058525050507034, -2.906450475048514, -2.807048445046326, -2.7076464150441364, -2.6082443850419468, -2.508842355039758, -2.4094403250375684, -2.3100382950353797, -2.21063626503319, -2.1112342350310005, -2.0118322050288118, -1.9124301750266222, -1.8130281450244334, -1.7136261150222438, -1.6142240850200542, -1.5148220550178655, -1.4154200250156759, -1.3160179950134872, -1.2166159650112975, -1.117213935009108, -1.0178119050069192, -0.9184098750047296, -0.8190078450025409, -0.7196058150003513, -0.6202037849981625, -0.5208017549959729, -0.4213997249937833, -0.3219976949915946, -0.22259566498940497, -0.12319363498721625, -0.023791604985026638, 0.07561042501716297, 0.1750124550193517, 0.2744144850215413, 0.37381651502373003, 0.47321854502591787, 0.5726205750281084, 0.6720226050302989, 0.7714246350324876, 0.8708266650346763, 0.970228695036865, 1.0696307250390555, 1.1690327550412443, 1.268434785043433, 1.3678368150456235, 1.4672388450478122, 1.566640875050001, 1.6660429050521914, 1.7654449350543802, 1.8648469650565689, 1.9642489950587558, 2.0636510250609463, 2.163053055063135, 2.262455085065324, 2.3618571150675143, 2.461259145069703, 2.5606611750718917, 2.6600632050740805, 2.759465235076271, 2.8588672650784597, 2.9582692950806484, 3.057671325082839, 3.1570733550850276, 3.2564753850872163, 3.355877415089407, 3.4552794450915956, 3.5546814750937843, 3.654083505095973, 3.7534855350981635, 3.8528875651003522, 3.952289595102541, 4.0516916251047315, 4.15109365510692, 4.250495685109109, 4.349897715111299, 4.449299745113488, 4.548701775115677, 4.648103805117866, 4.747505835120056, 4.846907865122245, 4.9463098951244335, 5.045711925126624, 5.145113955128813, 5.2445159851310015, 5.343918015133192, 5.443320045135381, 5.542722075137569, 5.642124105139758, 5.741526135141949, 5.840928165144137, 5.940330195146326, 6.039732225148517, 6.139134255150705, 6.238536285152894, 6.337938315155083, 6.437340345157273, 6.536742375159462, 6.636144405161651, 6.735546435163841, 6.83494846516603, 6.934350495168219, 7.033752525170409, 7.133154555172598, 7.232556585174787, 7.331958615176975, 7.431360645179166, 7.530762675181355, 7.630164705183543, 7.729566735185734, 7.8289687651879225, 7.928370795190111, 8.0277728251923, 8.12717485519449, 8.226576885196678, 8.325978915198867, 8.425380945201056, 8.524782975203244, 8.624185005205437, 8.723587035207625, 8.822989065209814, 8.922391095212006, 9.021793125214192, 9.121195155216384, 9.220597185218573, 9.319999215220761, 9.41940124522295, 9.518803275225139, 9.618205305227328, 9.71760733522952, 9.817009365231705, 9.916411395233897, 10.015813425236086, 10.115215455238275, 10.214617485240463, 10.314019515242656, 10.41342154524484, 10.512823575247033, 10.612225605249222, 10.71162763525141, 10.8110296652536, 10.910431695255792, 11.009833725257977, 11.109235755260169, 11.208637785262354, 11.308039815264546, 11.407441845266735, 11.50684387526892, 11.606245905271113, 11.705647935273301, 11.80504996527549, 11.904451995277679, 12.003854025279871, 12.103256055282056, 12.202658085284249, 12.302060115286437, 12.401462145288626, 12.500864175290815, 12.600266205293007, 12.699668235295192, 12.799070265297384, 12.89847229529957, 12.997874325301762, 13.09727635530395, 13.19667838530614, 13.296080415308328, 13.39548244531052, 13.494884475312706, 13.594286505314898, 13.693688535317087, 13.793090565319275, 13.892492595321464, 13.991894625323656, 14.091296655325841, 14.190698685328034, 14.290100715330222, 14.389502745332411, 14.4889047753346, 14.588306805336792, 14.687708835338977, 14.78711086534117, 14.886512895343355, 14.985914925345547, 15.085316955347736, 15.184718985349924, 15.284121015352113, 15.383523045354305, 15.48292507535649, 15.582327105358683, 15.681729135360872, 15.78113116536306, 15.880533195365249, 15.979935225367441, 16.079337255369627, 16.17873928537182, 16.278141315374008, 16.377543345376196, 16.476945375378385, 16.576347405380574, 16.675749435382762, 16.775151465384955, 16.87455349538714, 16.973955525389332, 17.07335755539152, 17.17275958539371, 17.2721616153959, 17.37156364539809, 17.470965675400276, 17.570367705402468, 17.669769735404657, 17.769171765406846, 17.868573795409034, 17.967975825411223, 18.06737785541341, 18.1667798854156, 18.266181915417793, 18.365583945419978, 18.46498597542217, 18.564388005424355, 18.663790035426548, 18.763192065428736, 18.862594095430925, 18.961996125433114, 19.061398155435306, 19.16080018543749, 19.260202215439683, 19.359604245441872, 19.45900627544406, 19.55840830544625, 19.657810335448442, 19.757212365450627, 19.85661439545282, 19.956016425455008, 20.055418455457197, 20.154820485459386, 20.254222515461574, 20.353624545463763, 20.453026575465955, 20.55242860546814, 20.651830635470333, 20.75123266547252, 20.85063469547471, 20.9500367254769, 21.04943875547909, 21.148840785481276, 21.24824281548347, 21.347644845485657, 21.447046875487846, 21.546448905490035, 21.645850935492227, 21.745252965494412, 21.844654995496604, 21.94405702549879, 22.043459055500982, 22.14286108550317, 22.24226311550536, 22.341665145507548, 22.44106717550974, 22.540469205511926, 22.639871235514118, 22.739273265516307, 22.838675295518495, 22.938077325520684, 23.037479355522876, 23.13688138552506, 23.236283415527254, 23.335685445529442, 23.43508747553163, 23.53448950553382, 23.633891535536012, 23.733293565538197, 23.83269559554039, 23.932097625542575, 24.031499655544767, 24.130901685546956, 24.230303715549145, 24.329705745551333, 24.42910777555352, 24.528509805555714, 24.627911835557896, 24.72731386556009, 24.82671589556228, 24.92611792556447, 25.025519955566658, 25.124921985568847, 25.224324015571035, 25.323726045573224, 25.42312807557542, 25.5225301055776, 25.62193213557979, 25.72133416558198, 25.820736195584175, 25.920138225586363, 26.019540255588552, 26.118942285590734, 26.21834431559293, 26.31774634559512, 26.417148375597307, 26.516550405599496, 26.615952435601685, 26.715354465603873, 26.814756495606062, 26.91415852560825, 27.013560555610447, 27.112962585612635, 27.212364615614817, 27.311766645617006, 27.4111686756192, 27.51057070562139, 27.60997273562358, 27.709374765625768, 27.808776795627956, 27.908178825630145, 28.007580855632334, 28.106982885634523, 28.20638491563672, 28.3057869456389, 28.40518897564109, 28.504591005643277, 28.603993035645473, 28.703395065647662, 28.80279709564985, 28.902199125652032, 29.001601155654228, 29.101003185656417, 29.200405215658606, 29.299807245660794, 29.39920927566299, 29.49861130566517, 29.59801333566736, 29.69741536566955, 29.796817395671745, 29.896219425673934, 29.995621455676115, 30.095023485678304, 30.1944255156805, 30.29382754568269, 30.393229575684877, 30.492631605687066, 30.592033635689248, 30.691435665691444, 30.790837695693632, 30.89023972569582, 30.98964175569801, 31.089043785700206, 31.188445815702387, 31.287847845704576, 31.387249875706765, 31.48665190570896, 31.58605393571115, 31.68545596571333, 31.78485799571552, 31.884260025717715, 31.983662055719904, 32.08306408572209, 32.18246611572428, 32.28186814572647, 32.38127017572866, 32.48067220573085, 32.580074235733036, 32.67947626573523, 32.77887829573742, 32.8782803257396, 32.97768235574179, 33.07708438574399, 33.176486415746176, 33.275888445748365, 33.375290475750546, 33.47469250575274, 33.57409453575493, 33.67349656575712, 33.77289859575931, 33.872300625761504, 33.971702655763686, 34.071104685765874, 34.17050671576806, 34.26990874577026, 34.36931077577245, 34.468712805774636, 34.56811483577682, 34.667516865779014, 34.7669188957812, 34.86632092578339, 34.96572295578558, 35.065124985787776, 35.16452701578996, 35.263929045792146, 35.363331075794335, 35.46273310579653, 35.56213513579872, 35.6615371658009, 35.76093919580309, 35.860341225805286, 35.959743255807474, 36.05914528580966, 36.15854731581185, 36.25794934581404, 36.35735137581623, 36.45675340581842, 36.55615543582061, 36.6555574658228, 36.75495949582499, 36.85436152582717, 36.95376355582936, 37.05316558583155, 37.152567615833746, 37.251969645835935, 37.35137167583812, 37.450773705840305, 37.5501757358425, 37.64957776584469, 37.74897979584688, 37.84838182584907, 37.947783855851256, 38.047185885853445, 38.14658791585563, 38.24598994585782, 38.34539197586002, 38.44479400586221, 38.54419603586439, 38.64359806586658, 38.74300009586877, 38.84240212587096, 38.94180415587315, 39.04120618587533, 39.14060821587753, 39.240010245879716, 39.339412275881905, 39.438814305884094, 39.53821633588629, 39.63761836588847, 39.73702039589066, 39.83642242589285, 39.935824455895045, 40.03522648589723, 40.13462851589942, 40.234030545901604, 40.3334325759038, 40.43283460590599, 40.53223663590818, 40.631638665910366, 40.731040695912554, 40.83044272591474, 40.92984475591693, 41.02924678591912, 41.128648815921316, 41.228050845923505, 41.32745287592569, 41.426854905927875, 41.52625693593007, 41.62565896593226, 41.72506099593445, 41.82446302593664, 41.923865055938826, 42.023267085941015])
+              .range(['#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#ccece6ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#99d8c9ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#66c2a4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#41b6c4ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#2c7fb8ff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#1d4f8aff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff', '#0b1a39ff']);
+    
+
+    color_map_f138d49a63914b9584e93779a17a141a.x = d3.scale.linear()
+              .domain([-7.578345885151408, 42.023267085941015])
+              .range([0, 450 - 50]);
+
+    color_map_f138d49a63914b9584e93779a17a141a.legend = L.control({position: 'topright'});
+    color_map_f138d49a63914b9584e93779a17a141a.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_f138d49a63914b9584e93779a17a141a.legend.addTo(map_52d883f4b4286c57f28bc9fdfc08ee9c);
+
+    color_map_f138d49a63914b9584e93779a17a141a.xAxis = d3.svg.axis()
+        .scale(color_map_f138d49a63914b9584e93779a17a141a.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([-7.578345885151408, -0.4924011749953472, 6.5935435351607135, 13.679488245316772, 20.765432955472836, 27.851377665628895, 34.93732237578495, 42.023267085941015]);
+
+    color_map_f138d49a63914b9584e93779a17a141a.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_f138d49a63914b9584e93779a17a141a.g = color_map_f138d49a63914b9584e93779a17a141a.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_f138d49a63914b9584e93779a17a141a.g.selectAll("rect")
+        .data(color_map_f138d49a63914b9584e93779a17a141a.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_f138d49a63914b9584e93779a17a141a.x(color_map_f138d49a63914b9584e93779a17a141a.color.domain()[i - 1]) : color_map_f138d49a63914b9584e93779a17a141a.x.range()[0],
+            x1: i < color_map_f138d49a63914b9584e93779a17a141a.color.domain().length ? color_map_f138d49a63914b9584e93779a17a141a.x(color_map_f138d49a63914b9584e93779a17a141a.color.domain()[i]) : color_map_f138d49a63914b9584e93779a17a141a.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_f138d49a63914b9584e93779a17a141a.g.call(color_map_f138d49a63914b9584e93779a17a141a.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Philippine municipalities/cities population grwoth rate 2015_2020 (%)");
+</script>
+</html>
